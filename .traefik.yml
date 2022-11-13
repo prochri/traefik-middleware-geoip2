@@ -1,12 +1,10 @@
-displayName: Demo Plugin
+displayName: Traefik Middleware Geoip2
 type: middleware
 iconPath: .assets/icon.png
 
-import: github.com/traefik/plugindemo
+import: github.com/prochri/traefik-middleware-geoip2
 
-summary: '[Demo] Add Request Header'
+summary: 'Traefik middleware plugin for MaxMind GeoIP2'
 
 testData:
-  Headers:
-    X-Demo: test
-    X-URL: '{{URL}}'
+  dbPath: 'GeoLite2-Country.mmdb'
